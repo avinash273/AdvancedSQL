@@ -31,3 +31,9 @@ WHERE population < 10000 ORDER BY population DESC;
 SELECT * FROM country
 WHERE name LIKE '%island%'
 ORDER BY name;
+
+SELECT * FROM country
+WHERE continent in ('Europe', 'Asia')
+ORDER BY name;
+
+SELECT DISTINCT(continent) from country;
