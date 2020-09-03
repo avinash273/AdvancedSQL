@@ -24,3 +24,6 @@ address TEXT);
 
 INSERT INTO test
 select name, address from customer;
+
+SELECT name, continent, population FROM country
+WHERE population < 10000 ORDER BY population DESC;
