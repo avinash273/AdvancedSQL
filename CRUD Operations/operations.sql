@@ -27,3 +27,7 @@ select name, address from customer;
 
 SELECT name, continent, population FROM country
 WHERE population < 10000 ORDER BY population DESC;
+
+SELECT * FROM country
+WHERE name LIKE '%island%'
+ORDER BY name;
