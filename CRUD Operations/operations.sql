@@ -17,3 +17,10 @@ SELECT * FROM customer;
 UPDATE customer set state = 'AP' WHERE state = 'AZ';
 
 DELETE FROM customer where id = 5;
+
+CREATE TABLE test(
+name TEXT,
+address TEXT);
+
+INSERT INTO test
+select name, address from customer;
