@@ -69,8 +69,7 @@ CREATE TRIGGER stampSale AFTER INSERT ON widgetSale
             WHERE widgetCustomer.id = NEW.customer_id;
         INSERT INTO widgetLog (stamp, event, username, tablename, table_id)
             VALUES (DATETIME('now'), 'INSERT', 'TRIGGER', 'widgetSale', NEW.id);
-    END
-;
+    END;
 
 INSERT INTO widgetSale (item_id, customer_id, quan, price) VALUES (1, 3, 5, 1995);
 INSERT INTO widgetSale (item_id, customer_id, quan, price) VALUES (2, 2, 3, 1495);
