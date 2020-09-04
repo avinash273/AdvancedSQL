@@ -40,3 +40,10 @@ JOIN right AS r ON l.id = r.id;
 SELECT * FROM left AS l
 LEFT JOIN right AS r
 ON l.id = r.id;
+
+--relating multiple tables
+SELECT c.name AS Cust, c.zip, i.name AS Item, i.description, s.quantity AS Quan, s.price AS Price
+FROM sale AS s
+JOIN item AS i ON s.item_id = i.id
+JOIN customer AS c ON s.customer_id = c.id
+ORDER BY Cust, Item;
