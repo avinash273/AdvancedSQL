@@ -7,3 +7,6 @@ WHERE name = "Providence";
 SELECT TRIM('    STRING    ');
 SELECT LTRIM('    STRING    ');
 SELECT RTRIM('....STRING....', '.');
+
+--lower and upper functions
+SELECT LOWER('STRing') = LOWER('strinG');
