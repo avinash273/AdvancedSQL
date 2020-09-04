@@ -35,3 +35,8 @@ WHERE l.id = r.id;
 SELECT l.description AS left, r.description AS right
 FROM left AS l
 JOIN right AS r ON l.id = r.id;
+
+--left outer join
+SELECT * FROM left AS l
+LEFT JOIN right AS r
+ON l.id = r.id;
