@@ -1,4 +1,5 @@
 -- 01 update triggers
+--avinash shanker
 -- test.db
 
 CREATE TABLE widgetCustomer ( id INTEGER PRIMARY KEY, name TEXT, last_order_id INT );
