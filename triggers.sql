@@ -6,6 +6,7 @@ CREATE TABLE widgetCustomer ( id INTEGER PRIMARY KEY, name TEXT, last_order_id I
 CREATE TABLE widgetSale ( id INTEGER PRIMARY KEY, item_id INT, customer_id INT, quan INT, price INT );
 
 INSERT INTO widgetCustomer (name) VALUES ('Bob');
+INSERT INTO widgetCustomer (name) VALUES ('Bobs');
 INSERT INTO widgetCustomer (name) VALUES ('Sally');
 INSERT INTO widgetCustomer (name) VALUES ('Fred');
 
