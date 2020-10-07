@@ -27,7 +27,7 @@ SELECT * FROM widgetCustomer;
 -- 02 preventing updates
 -- test.db
 
-DROP TABLE IF EXISTS widgetSale;
+--DROP TABLE IF EXISTS widgetSale;
 
 CREATE TABLE widgetSale ( id integer primary key, item_id INT, customer_id INTEGER, quan INT, price INT,
     reconciled INT );
