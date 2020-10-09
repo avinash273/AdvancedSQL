@@ -1,4 +1,5 @@
 -- 02 transactions
+--do more
 -- test.db
 
 CREATE TABLE widgetInventory (
