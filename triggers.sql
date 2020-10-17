@@ -12,6 +12,8 @@ INSERT INTO widgetCustomer (name) VALUES ('Fred');
 
 SELECT * FROM widgetCustomer;
 
+SELECT count(1) FROM widgetCustomer;
+
 CREATE TRIGGER newWidgetSale AFTER INSERT ON widgetSale
     BEGIN
         UPDATE widgetCustomer SET last_order_id = NEW.id WHERE widgetCustomer.id = NEW.customer_id;
