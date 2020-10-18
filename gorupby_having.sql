@@ -1,4 +1,5 @@
 --how many tracks each album has greater than 9?
+--need to try
 SELECT a.title AS album, COUNT(*) as tracks
 FROM track AS t
 JOIN album AS a
@@ -8,6 +9,10 @@ having tracks > 9
 ORDER BY tracks;
 
 SELECT region, COUNT(*) AS Count FROM country
+GROUP BY region
+ORDER BY Count DESC, region;
+
+SELECT region, COUNT(1) AS Count FROM country
 GROUP BY region
 ORDER BY Count DESC, region;
 
