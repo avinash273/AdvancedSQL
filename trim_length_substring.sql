@@ -10,3 +10,6 @@ SELECT RTRIM('....STRING....', '.');
 
 --lower and upper functions
 SELECT LOWER('STRing') = LOWER('strinG');
+
+--lower and upper functions
+SELECT LOWER('STRing') = LOWER('strinG');
